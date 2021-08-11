@@ -38,7 +38,7 @@ final class PathStructureValidator implements Validator
     protected function validateMovementData(array $data): void
     {
         // First element is a string that defines one-letter action
-        if (!is_string($data[0])) {
+        if (! is_string($data[0])) {
             throw new Exception("Movement type should be a string");
         }
 
@@ -50,7 +50,7 @@ final class PathStructureValidator implements Validator
         array_shift($data);
 
         foreach ($data as $coordinate) {
-            if (!(is_float($coordinate) || is_int($coordinate))) {
+            if (! (is_float($coordinate) || is_int($coordinate))) {
                 throw new Exception("Path coordinate should be float or integer");
             }
         }

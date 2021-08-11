@@ -2,6 +2,8 @@
 
 namespace Osbre\Fabric\Shapes;
 
+use Osbre\Fabric\Data\TextStyling;
+
 class Text extends FabricObject
 {
     public string $text;
@@ -20,7 +22,7 @@ class Text extends FabricObject
     public ?string $textBackgroundColor;
     public ?float $charSpacing;
 
-    public ?array $path;
     public ?string $direction;
+    /** @var TextStyling[] */
     public ?array $styles;
 }

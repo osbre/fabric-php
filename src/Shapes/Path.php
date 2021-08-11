@@ -2,7 +2,11 @@
 
 namespace Osbre\Fabric\Shapes;
 
-class Path extends Text
+use Osbre\Fabric\Validators\PathStructureValidator;
+
+class Path extends FabricObject
 {
+    /** @var array[]|null */
+    #[PathStructureValidator]
     public ?array $path;
 }

@@ -7,7 +7,7 @@ class Text extends FabricObject
     public string $text;
 
     public int $fontSize;
-    public string|int|null $fontWeight;
+    public string | int | null $fontWeight;
     public string $fontFamily;
     public ?string $fontStyle;
     public ?int $lineHeight;

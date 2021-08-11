@@ -1,7 +1,9 @@
 <?php
 
-namespace Osbre\Fabric;
+namespace Osbre\Fabric\Shapes;
 
+use Osbre\Fabric\Shadow;
+use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
 abstract class FabricObject extends DataTransferObject
@@ -19,7 +21,10 @@ abstract class FabricObject extends DataTransferObject
     public ?string $stroke;
 
     public ?float $strokeWidth;
-    public ?float $strokeDashArray;
+
+    /** @var int[]|null */
+    public ?array $strokeDashArray;
+
     public ?string $strokeLineCap;
     public ?int $strokeDashOffset;
     public ?string $strokeLineJoin;
@@ -33,7 +38,10 @@ abstract class FabricObject extends DataTransferObject
     public ?bool $flipY;
 
     public ?float $opacity;
-    public ?array $shadow;
+
+    #[CastWith(Shadow::class)]
+    public ?Shadow $shadow;
+
     public ?bool $visible;
     public ?string $backgroundColor;
     public ?string $fillRule;

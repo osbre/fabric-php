@@ -1,6 +1,6 @@
 <?php
 
-namespace Osbre\Fabric;
+namespace Osbre\Fabric\Shapes;
 
 class Path extends Text
 {

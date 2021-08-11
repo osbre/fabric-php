@@ -1,6 +1,6 @@
 <?php
 
-namespace Osbre\Fabric\Tests;
+namespace Osbre\Fabric\Shapes\Tests;
 
 use PHPUnit\Framework\TestCase;
 

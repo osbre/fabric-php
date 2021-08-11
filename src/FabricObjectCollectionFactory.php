@@ -9,7 +9,7 @@ class FabricObjectCollectionFactory
 {
     public static function fromArray(array $items): FabricObjectCollection
     {
-        return Collection::make($items)->map(fn($item) => match ($item['type']) {
+        return Collection::make($items)->map(fn ($item) => match ($item['type']) {
             default => new FabricObject($item),
         })->dd();
     }

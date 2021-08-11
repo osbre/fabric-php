@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Osbre\Fabric\Tests;
 
 use PHPUnit\Framework\TestCase;
 

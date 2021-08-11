@@ -1,6 +1,6 @@
 <?php
 
-namespace Osbre\Fabric;
+namespace Osbre\Fabric\Data;
 
 class Shadow
 {

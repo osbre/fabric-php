@@ -2,11 +2,11 @@
 
 namespace Osbre\Fabric\Shapes;
 
-use Osbre\Fabric\Shadow;
+use Osbre\Fabric\Data\Shadow;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
-abstract class FabricObject extends DataTransferObject
+class FabricObject extends DataTransferObject
 {
     public string $version;
     public ?string $originX;

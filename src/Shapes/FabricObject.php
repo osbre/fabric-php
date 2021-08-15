@@ -7,6 +7,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 
 class FabricObject extends DataTransferObject
 {
+    public string $type;
     public string $version;
     public ?string $originX;
     public ?string $originY;

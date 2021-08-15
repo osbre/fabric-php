@@ -2,11 +2,10 @@
 
 namespace Osbre\Fabric\Shapes;
 
-use Osbre\Fabric\Shadow;
-use Spatie\DataTransferObject\Attributes\CastWith;
+use Osbre\Fabric\Data\Shadow;
 use Spatie\DataTransferObject\DataTransferObject;
 
-abstract class FabricObject extends DataTransferObject
+class FabricObject extends DataTransferObject
 {
     public string $version;
     public ?string $originX;
@@ -39,7 +38,6 @@ abstract class FabricObject extends DataTransferObject
 
     public ?float $opacity;
 
-    #[CastWith(Shadow::class)]
     public ?Shadow $shadow;
 
     public ?bool $visible;

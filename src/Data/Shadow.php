@@ -1,8 +1,10 @@
 <?php
 
-namespace Osbre\Fabric;
+namespace Osbre\Fabric\Data;
 
-class Shadow
+use Spatie\DataTransferObject\DataTransferObject;
+
+class Shadow extends DataTransferObject
 {
     public ?string $color;
     public ?int $blur;

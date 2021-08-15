@@ -39,7 +39,6 @@ class FabricObject extends DataTransferObject
 
     public ?float $opacity;
 
-    #[CastWith(Shadow::class)]
     public ?Shadow $shadow;
 
     public ?bool $visible;

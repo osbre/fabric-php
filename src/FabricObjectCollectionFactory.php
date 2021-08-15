@@ -6,6 +6,13 @@ use Illuminate\Support\Collection;
 
 class FabricObjectCollectionFactory
 {
+    public static function fromString(string $json): FabricObjectCollection
+    {
+        return self::fromArray(
+            json_decode($json, true)
+        );
+    }
+
     public static function fromArray(array $items): FabricObjectCollection
     {
         return Collection::make($items)

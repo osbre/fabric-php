@@ -3,7 +3,6 @@
 namespace Osbre\Fabric\Shapes;
 
 use Osbre\Fabric\Data\Shadow;
-use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class FabricObject extends DataTransferObject
